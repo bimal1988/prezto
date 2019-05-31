@@ -3,6 +3,7 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Bimal <bimaleal@gmail.com>
 #
 
 #
@@ -17,8 +18,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vi'
+export VISUAL='vi'
 export PAGER='less'
 
 #

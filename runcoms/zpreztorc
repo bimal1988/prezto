@@ -3,6 +3,7 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Bimal <bimaleal@gmail.com>
 #
 
 #
@@ -28,7 +29,6 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
-  'terminal' \
   'editor' \
   'history' \
   'directory' \
@@ -37,11 +37,9 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'autosuggestions' \
   'z' \
-  'ssh' \
   'rsync' \
   'osx' \
   'pacman' \
-  'tmux' \
   'homebrew' \
   'docker' \
   'archive' \
@@ -73,7 +71,7 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
-#zstyle ':prezto:module:editor' ps-context 'yes'
+zstyle ':prezto:module:editor' ps-context 'yes'
 
 #
 # Git
@@ -216,16 +214,16 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 # Set the default session name:
-zstyle ':prezto:module:tmux:session' name '0'
+# zstyle ':prezto:module:tmux:session' name '0'
 
 #
 # Utility

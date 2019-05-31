@@ -3,6 +3,7 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Bimal <bimaleal@gmail.com>
 #
 
 # Source Prezto.
@@ -21,9 +22,9 @@ export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} 2> /de
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 export FZF_COMPLETION_TRIGGER=',,'
 
-# # ===========================================================
-# # ===                        conda                        ===
-# # ===========================================================
+# ===========================================================
+# ===                        conda                        ===
+# ===========================================================
 [ -d "$HOME/miniconda3/bin" ] && export PATH="$HOME/miniconda3/bin:$PATH"
 [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ] && source $HOME/miniconda3/etc/profile.d/conda.sh
 
@@ -40,8 +41,3 @@ export NVM_DIR="$HOME/.nvm"
 alias vi="nvim"
 alias vim="nvim"
 alias cl="clear"
-
-# ===========================================================
-# ===                    Key Bindings                     ===
-# ===========================================================
-bindkey '^ ' autosuggest-execute
