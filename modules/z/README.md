@@ -23,9 +23,10 @@ Aliases
 Authors
 -------
 
-*The authors of this module should be contacted via the [issue tracker][5].*
+*The authors of this module should be contacted via the [issue tracker][2].*
 
   - [rupa](https://github.com/rupa)
   - [Bimal](https://github.com/bimal1988)
 
-[1]: https://github.com/bimal1988/prezto/issues/
+[1]: https://github.com/rupa/z
+[2]: https://github.com/bimal1988/prezto/issues/
