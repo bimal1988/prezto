@@ -11,3 +11,37 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# ===========================================================
+# ===                          fzf                        ===
+# ===========================================================
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND="rg --files --hidden --smart-case --follow --glob '!.git/*'"
+export FZF_TMUX=1
+export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+export FZF_COMPLETION_TRIGGER=',,'
+
+# # ===========================================================
+# # ===                        conda                        ===
+# # ===========================================================
+[ -d "$HOME/miniconda3/bin" ] && export PATH="$HOME/miniconda3/bin:$PATH"
+[ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ] && source $HOME/miniconda3/etc/profile.d/conda.sh
+
+# ===========================================================
+# ===                         nvm                         ===
+# ===========================================================
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ===========================================================
+# ===                        Aliases                      ===
+# ===========================================================
+alias vi="nvim"
+alias vim="nvim"
+alias cl="clear"
+
+# ===========================================================
+# ===                    Key Bindings                     ===
+# ===========================================================
+bindkey '^ ' autosuggest-execute
