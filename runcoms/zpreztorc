@@ -32,13 +32,13 @@ zstyle ':prezto:load' pmodule \
   'editor' \
   'history' \
   'directory' \
-  'z' \
-  'ssh' \
-  'rsync' \
   'spectrum' \
   'utility' \
   'completion' \
   'autosuggestions' \
+  'z' \
+  'ssh' \
+  'rsync' \
   'osx' \
   'pacman' \
   'tmux' \
