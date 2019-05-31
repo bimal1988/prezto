@@ -24,7 +24,7 @@ fi
 # macOS and HFS+ Enhancements
 # https://bombich.com/kb/ccc5/credits
 if [[ "$OSTYPE" == darwin* ]] && grep -q 'file-flags' <(rsync --help 2>&1); then
-  _rsync_cmd="${_rsync_cmd} --crtimes --fileflags --protect-decmpfs --force-change"
+  _rsync_cmd="${_rsync_cmd} --crtimes --fileflags --force-change"
 fi
 
 alias rsync-copy="${_rsync_cmd}"
