@@ -32,6 +32,7 @@ zstyle ':prezto:load' pmodule \
   'editor' \
   'history' \
   'directory' \
+  'z' \
   'ssh' \
   'rsync' \
   'spectrum' \
