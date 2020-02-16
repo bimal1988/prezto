@@ -34,3 +34,6 @@
 [submodule "modules/prompt/external/powerlevel10k"]
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "modules/fzf/external"]
+	path = modules/fzf/external
+	url = https://github.com/junegunn/fzf.git
