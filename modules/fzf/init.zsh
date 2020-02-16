@@ -40,7 +40,11 @@ elif (( $+commands[ag] )); then
   }
 fi
 
+export FZF_TMUX=1
+export FZF_HEIGHT=40%
+export FZF_TMUX_HEIGHT=40%
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS="--height ${FZF_HEIGHT} --reverse --inline-info"
 
 # Show preview on Ctrl-T
 export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
@@ -49,10 +53,6 @@ export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} 2> /de
 if (( $+commands[tree] )); then
   export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 fi
-
-# Integration with tmux
-export FZF_TMUX=1
-export FZF_TMUX_HEIGHT=40%
 
 # Integration with z
 if zstyle -t ':prezto:module:z' loaded; then
