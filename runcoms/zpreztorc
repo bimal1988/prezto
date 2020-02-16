@@ -39,8 +39,8 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'autosuggestions' \
-  'fzf' \
   'z' \
+  'fzf' \
   'rsync' \
   'osx' \
   'pacman' \
