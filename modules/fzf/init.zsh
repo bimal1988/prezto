@@ -56,7 +56,7 @@ export FZF_TMUX_HEIGHT=40%
 
 # Integration with z
 if zstyle -t ':prezto:module:z' loaded; then
-  unalias z 2> /dev/null
+  unalias z
 
   z() {
     if [[ -z "$*" ]]; then
