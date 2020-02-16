@@ -58,7 +58,7 @@ export FZF_TMUX_HEIGHT=40%
 if zstyle -t ':prezto:module:z' loaded; then
   unalias z
 
-  z() {
+  function z() {
     if [[ -z "$*" ]]; then
       cd "$(_z -l 2>&1 | fzf +s --tac | sed 's/^[0-9,.]* *//')"
     else
@@ -67,7 +67,7 @@ if zstyle -t ':prezto:module:z' loaded; then
     fi
   }
 
-  zz() {
+  function zz() {
     cd "$(_z -l 2>&1 | sed 's/^[0-9,.]* *//' | fzf -q "$_last_z_args")"
   }
 
