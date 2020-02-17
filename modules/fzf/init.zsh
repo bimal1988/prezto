@@ -45,7 +45,7 @@ export FZF_TMUX=1
 export FZF_HEIGHT=40%
 export FZF_TMUX_HEIGHT=40%
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_DEFAULT_OPTS="--height ${FZF_HEIGHT} --reverse --inline-info --color ${fzf_colors[Gruvbox]}"
+export FZF_DEFAULT_OPTS="--height ${FZF_HEIGHT} --reverse --inline-info --color ${fzf_colors["Gruvbox"]}"
 
 # Show preview on Ctrl-T
 export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
