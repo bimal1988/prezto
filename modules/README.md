@@ -33,11 +33,6 @@ Directory
 
 Sets directory options and defines directory aliases.
 
-DNF
----
-
-Defines dnf aliases.
-
 Dpkg
 ----
 
@@ -58,11 +53,6 @@ Environment
 
 Sets general shell options and defines environment variables.
 
-Fasd
-----
-
-Maintains a frequently used file and directory list for fast access.
-
 Git
 ---
 
@@ -78,11 +68,6 @@ GPG
 ---
 
 Provides for an easier use of GPG by setting up gpg-agent.
-
-Haskell
--------
-
-Enables local Haskell package installation.
 
 Helper
 ------
@@ -104,20 +89,10 @@ Homebrew
 
 Defines Homebrew aliases.
 
-MacPorts
---------
-
-Defines MacPorts aliases and adds MacPorts directories to path variables.
-
 Node.js
 -------
 
 Provides utility functions for Node.js and loads npm completion.
-
-OCaml
------
-
-Initializes OCaml package management.
 
 OSX
 ---
@@ -129,11 +104,6 @@ Pacman
 
 Provides aliases and functions for the Pacman package manager and frontends.
 
-Perl
-----
-
-Enables local Perl module installation on macOS and defines alises.
-
 Prompt
 ------
 
@@ -144,26 +114,10 @@ Python
 
 Enables local Python and local Python package installation.
 
-Ruby on Rails
--------------
-
-Defines Ruby on Rails aliases.
-
 Rsync
 -----
 
 Defines rsync aliases.
-
-Ruby
-----
-
-Configures Ruby local gem installation, loads version managers, and defines
-aliases.
-
-GNU Screen
-----------
-
-Defines GNU Screen aliases and provides for auto launching it at start-up.
 
 Spectrum
 --------
@@ -195,12 +149,11 @@ Utility
 
 Defines general aliases and functions.
 
-Wake-on-LAN
------------
+z
+-------
 
-This module provides a wrapper around the wakeonlan tool.
+Defines shortcuts for z- frecency based quick file/directory access.
 
-Yum
----
-
-Defines yum aliases.
+fzf
+-------
+Defines shortcuts and customization for fzf- the command line fuzzy finder.
