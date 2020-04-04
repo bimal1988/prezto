@@ -7,6 +7,9 @@
 #   Patrick Bos <egpbos@gmail.com>
 #
 
+# Load dependencies
+pmodload 'helper'
+
 # Load manually installed pyenv into the path
 if [[ -s "${PYENV_ROOT:=$HOME/.pyenv}/bin/pyenv" ]]; then
   path=("${PYENV_ROOT}/bin" $path)
@@ -22,7 +25,7 @@ elif (( $+commands[pyenv] )); then
 else
   if [[ -n "$PYTHONUSERBASE" ]]; then
     path=($PYTHONUSERBASE/bin $path)
-  elif [[ "$OSTYPE" == darwin* ]]; then
+  elif is-darwin; then
     path=($HOME/Library/Python/*/bin(N) $path)
   else
     # This is subject to change.
